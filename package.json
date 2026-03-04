@@ -1,0 +1,51 @@
+{
+  "name": "setup-simulator",
+  "version": "0.1.0",
+  "description": "Simulate multi-agent architecture cost, performance, and failure modes before you build.",
+  "author": "Ben Tossell",
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "simulator",
+    "cost",
+    "performance",
+    "architecture",
+    "planning"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest --run --coverage",
+    "test:watch": "vitest",
+    "cli": "bun run src/cli/simsetup.ts"
+  },
+  "bin": {
+    "simsetup": "./bin/simsetup.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "yaml": "^2.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/node": "^22.13.8",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "^15.2.0",
+    "jsdom": "^26.0.0",
+    "typescript": "^5.8.2",
+    "vitest": "^2.1.8"
+  }
+}
